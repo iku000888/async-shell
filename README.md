@@ -6,7 +6,7 @@ An asyncronous shell command server and client.
 
 1. python server.py <port#>
 2. echo <port#> >> .async_port
-3. python client.py <shell commanf>
+3. python client.py <shell command>
 
 ## Future Plan, if any
 - Proper packaging as a command utility.
