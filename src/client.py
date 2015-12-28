@@ -1,10 +1,13 @@
 import socket
 import sys
 import os
+from os.path import expanduser
+home = expanduser("~")
 
 HOST = 'localhost'
 # The remote host
-PORT = 50008
+PORT = open(home+'/.async_port', 'r').readline()
+PORT = int(PORT)
 # The same port as used by the server
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((HOST, PORT))
